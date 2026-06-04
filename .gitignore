@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build / dist
+build/
+dist/
+*.spec
+
+# App-local artifacts (kept out of the repo even if they land in the cwd)
+_inputs.txt
+_run.log
+workshop_downloader.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
