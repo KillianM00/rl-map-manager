@@ -1,5 +1,7 @@
 # RL Map Manager
 
+[![Tests](https://github.com/KillianM00/rl-map-manager/actions/workflows/test.yml/badge.svg)](https://github.com/KillianM00/rl-map-manager/actions/workflows/test.yml)
+
 A clean desktop browser for Rocket League custom workshop maps. Picks up the BakkesMod **Workshop Map Loader** plugin's `CustomMaps` folder automatically and installs maps into it with one click — no Steam account, no SteamCMD, no `.upk` swapping.
 
 ## Why this exists
