@@ -14,9 +14,9 @@ import urllib.error
 import zipfile
 from pathlib import Path
 
-# celab.jetfox.ovh's TLS cert is currently expired. For a personal-use tool
-# pointed at a known community map mirror, accept that and skip verification.
-_SSL_CTX = ssl._create_unverified_context()
+# Authenticate both catalog and archive downloads with the system trust store.
+# An expired or untrusted mirror certificate must fail closed.
+_SSL_CTX = ssl.create_default_context()
 
 GITLAB_BASE = "https://celab.jetfox.ovh/api/v4"
 UA = "RLMapManager/0.2"
